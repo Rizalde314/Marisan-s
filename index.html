@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marisan's | Filipino Kakanin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span>Marisan's</span>
+                <small>FILIPINO KAKANIN</small>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Our Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Order Now</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="welcome">WELCOME TO MARISAN'S</p>
+
+            <h1>
+                Homemade Filipino
+                <span>Kakanin</span>
+            </h1>
+
+            <p class="hero-text">
+                Traditional Filipino delicacies made with love,
+                care, and the authentic flavors you know and love.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn primary-btn">
+                    View Our Products
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Order Now
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-decoration">
+            <div class="food-circle">
+                🍚
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <p class="section-label">OUR SPECIALTIES</p>
+
+            <h2>
+                Taste the Tradition
+            </h2>
+
+            <p>
+                Enjoy our delicious selection of traditional Filipino
+                kakanin, freshly prepared for every customer.
+            </p>
+
+        </div>
+
+
+        <div class="products-container">
+
+            <!-- PUTO -->
+            <div class="product-card">
+
+                <div class="product-image puto">
+                    <span>🍥</span>
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Puto</h3>
+
+                    <p>
+                        Soft, fluffy, and lightly sweet Filipino steamed rice
+                        cakes perfect for snacks or breakfast.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span class="price">₱5.00</span>
+                        <button class="order-btn"
+                            onclick="orderProduct('Puto')">
+                            Order
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- KOTSENTA -->
+            <div class="product-card">
+
+                <div class="product-image kotsenta">
+                    <span>🍮</span>
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Kotsenta</h3>
+
+                    <p>
+                        A chewy and sweet Filipino rice cake with a
+                        deliciously satisfying texture.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span class="price">₱5.00</span>
+                        <button class="order-btn"
+                            onclick="orderProduct('Kotsenta')">
+                            Order
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MURON -->
+            <div class="product-card">
+
+                <div class="product-image muron">
+                    <span>🌿</span>
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Muron</h3>
+
+                    <p>
+                        A classic Filipino delicacy made from sticky rice,
+                        coconut, and delicious sweet flavors.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span class="price">₱10.00</span>
+                        <button class="order-btn"
+                            onclick="orderProduct('Muron')">
+                            Order
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SAPIN-SAPIN -->
+            <div class="product-card">
+
+                <div class="product-image sapin">
+                    <span>🌈</span>
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Sapin-Sapin</h3>
+
+                    <p>
+                        Colorful layered rice cake with sweet coconut flavors
+                        and a soft, chewy texture.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span class="price">₱5.00</span>
+                        <button class="order-btn"
+                            onclick="orderProduct('Sapin-Sapin')">
+                            Order
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BIKO -->
+            <div class="product-card">
+
+                <div class="product-image biko">
+                    <span>🍯</span>
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Biko</h3>
+
+                    <p>
+                        Sticky rice cooked with coconut milk and brown sugar
+                        for a rich and comforting Filipino dessert.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span class="price">₱500.00</span>
+                        <button class="order-btn"
+                            onclick="orderProduct('Biko')">
+                            Order
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAJA -->
+            <div class="product-card">
+
+                <div class="product-image maja">
+                    <span>🥥</span>
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Maja</h3>
+
+                    <p>
+                        Creamy coconut pudding topped with sweet coconut
+                        flakes, perfect for any occasion.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span class="price">₱500.00</span>
+                        <button class="order-btn"
+                            onclick="orderProduct('Maja')">
+                            Order
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about-section" id="about">
+
+        <div class="about-image">
+            <div class="about-circle">
+                🥥
+            </div>
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT MARISAN'S</p>
+
+            <h2>
+                Made with Love,
+                Served with Tradition
+            </h2>
+
+            <p>
+                At <strong>Marisan's</strong>, we believe that Filipino
+                kakanin is more than just food. It is part of our culture,
+                memories, celebrations, and everyday moments.
+            </p>
+
+            <p>
+                We prepare our kakanin with care using traditional flavors
+                and recipes that bring the taste of home to every bite.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <span>❤️</span>
+                    <h4>Made with Love</h4>
+                    <p>Prepared with care for every customer.</p>
+                </div>
+
+                <div>
+                    <span>🌾</span>
+                    <h4>Traditional Taste</h4>
+                    <p>Inspired by Filipino kakanin traditions.</p>
+                </div>
+
+                <div>
+                    <span>✨</span>
+                    <h4>Fresh & Delicious</h4>
+                    <p>Made to bring you a satisfying experience.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ORDER SECTION ================= -->
+    <section class="order-section" id="contact">
+
+        <div class="order-container">
+
+            <div class="order-text">
+
+                <p class="section-label">
+                    ORDER FROM MARISAN'S
+                </p>
+
+                <h2>
+                    Craving Filipino Kakanin?
+                </h2>
+
+                <p>
+                    Send us a message and place your order today!
+                    Choose your favorite kakanin and enjoy the
+                    taste of homemade Filipino goodness.
+                </p>
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>09758405448</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>rizaldeastorga4@email.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Location</strong>
+                            <p>New Mahayag Catbalogan City</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ORDER FORM -->
+            <form class="order-form" id="orderForm">
+
+                <h3>Place Your Order</h3>
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="product">
+                    Choose Product
+                </label>
+
+                <select id="product" required>
+
+                    <option value="">
+                        Select a product
+                    </option>
+
+                    <option value="Puto">Puto</option>
+                    <option value="Kotsenta">Kotsenta</option>
+                    <option value="Muron">Muron</option>
+                    <option value="Sapin-Sapin">Sapin-Sapin</option>
+                    <option value="Biko">Biko</option>
+                    <option value="Maja">Maja</option>
+
+                </select>
+
+
+                <label for="quantity">
+                    Quantity
+                </label>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    min="1"
+                    value="1"
+                    required
+                >
+
+
+                <label for="message">
+                    Additional Message
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Add your order details..."
+                ></textarea>
+
+
+                <button type="submit" class="submit-btn">
+                    Send Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <h2>Marisan's</h2>
+            <p>Filipino Kakanin</p>
+        </div>
+
+        <div class="footer-social">
+
+            <a href="#" aria-label="Facebook">
+                Facebook
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                Instagram
+            </a>
+
+            <a href="#" aria-label="Messenger">
+                Messenger
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Marisan's. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
